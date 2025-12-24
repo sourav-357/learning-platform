@@ -1,6 +1,6 @@
 
 
-import mongoose, { connect } from "mongoose";
+import mongoose from "mongoose";
 
 
 
@@ -10,8 +10,8 @@ const connectDB = async () => {
         console.log(`Database connected successfully...`);
 
     } catch (error) {
-        console.log(`error occured...`, error);
-        
+        console.log(`error occured while connecting to database...`, error);
+
     }
 }
 
